@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body
+{
+	margin:0;
+	padding:0;
+}
+.gallery-block
+{
+	width:100%;
+	display: grid;
+	grid-auto-flow: dense;
+	grid-gap: 5px;
+	grid-template:"1fr 1fr 1fr 1fr 1fr" 30.33vh 
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh 
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh
+				  "1fr 1fr 1fr 1fr 1fr" 30.33vh; 	
+}
+.gallery-block .view{
+	position:relative;
+	background-color: #ccc;
+}
+.gallery-block .item2,
+.gallery-block .item5,
+.gallery-block .item10,
+.gallery-block .item18{
+	grid-row: span 2;
+}
+.gallery-block .item1,
+.gallery-block .item6,
+.gallery-block .item14,
+.gallery-block .item20{
+	grid-column: span 2;
+}
+.gallery-block .item3,
+.gallery-block .item8,
+.gallery-block .item12,
+.gallery-block .item15,
+.gallery-block .item16,
+.gallery-block .item11{
+	grid-column: span 2;
+	grid-row: span 2;
+}
+.gallery-block .item17,
+.gallery-block .item2{
+	grid-row: span 3;
+}
+.gallery-block .item12{
+	grid-row: span 3;
+	grid-column: span 2;
+}
+.gallery-block .view img{
+	position:absolute;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+	object-fit: cover;
+}
+@media (max-width: 1024px){
+	.gallery-block{
+	grid-template:"1fr 1fr 1fr 1fr" 33.33vh 
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh 
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh
+				  "1fr 1fr 1fr 1fr" 33.33vh;
+	}
+	.gallery-block .item5{
+		grid-row: span 3;
+	}
+	.gallery-block .item12{
+		grid-row: span 3;
+		grid-column: span 2;
+	}
+	.gallery-block .item16,
+	.gallery-block .item19{
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+}
+@media (max-width: 900px){
+	.gallery-block{
+	grid-template:"1fr 1fr" 250px 
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px 
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px
+				  "1fr 1fr" 250px;
+	}
+	.gallery-block .item7,
+	.gallery-block .item9,
+	.gallery-block .item13,
+	.gallery-block .item15,
+	.gallery-block .item19,
+	.gallery-block .item21{
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.gallery-block .item5,
+	.gallery-block .item2,
+	.gallery-block .item10,
+	.gallery-block .item17,
+	.gallery-block .item18{
+		grid-row: span 3;
+	}
+	.gallery-block .item1,
+	.gallery-block .item6,
+	.gallery-block .item20
+	{
+		grid-column: span 2;
+	}
+	.gallery-block .item4,
+	.gallery-block .item8,
+	.gallery-block .item14,
+	.gallery-block .item16,
+	.gallery-block .item3,
+	.gallery-block .item11{
+		grid-row: span 2;
+		grid-column: span 2;
+	}
+	.gallery-block .item12{
+		grid-row: span 3;
+		grid-column: span 2;
+	}
+}
+@media (max-width: 600px){
+	.gallery-block{
+	grid-template:"1fr 1fr" 200px 
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px 
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px
+				  "1fr 1fr" 200px;
+	}
+	.gallery-block .item7,
+	.gallery-block .item9,
+	.gallery-block .item4,
+	.gallery-block .item3,
+	.gallery-block .item13,
+	.gallery-block .item15,
+	.gallery-block .item19,
+	.gallery-block .item21,
+	.gallery-block .item11,
+	.gallery-block .item8{
+		grid-column: span 1;
+		grid-row: span 1;
+	}
+	.gallery-block .item5,
+	.gallery-block .item2,
+	.gallery-block .item10,
+	.gallery-block .item17,
+	.gallery-block .item18{
+		grid-row: span 2;
+	}
+	.gallery-block .item1,
+	.gallery-block .item6{
+		grid-column: span 2;
+	}
+	.gallery-block .item20,
+	.gallery-block .item14,
+	.gallery-block .item16{
+		grid-column: span 2;
+		grid-row: span 1;
+	}
+	.gallery-block .item12{
+		grid-row: span 2;
+		grid-column: span 1;
+	}
+}
